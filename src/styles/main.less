@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'DIN-Regular';
+    src: url(../../assets/fonts/DIN/DIN-Regular.otf)
+}
+
+@header-height:60px;
+
+body {
+    color: black;
+    background-color: #e7e8e9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .body-wrapper {
+        box-sizing: content-box;
+        width: 100%;
+        height: 100%;
+
+        .header-wrapper {
+            box-sizing: border-box;
+            position: fixed;
+            height: @header-height;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-color: #af8c0e;
+
+            .header-container {
+                box-sizing: content-box;
+                color: white;
+                line-height: @header-height;
+                margin: 0px 15px;
+
+                .logo-wrapper {
+                    display: inline-block;
+                    font-family: DIN-Regular, Helvetica;
+                    vertical-align: top;
+                    img {
+                        height: @header-height;
+                    }
+                }
+
+                .nav-wrapper {
+                    display: inline-block;
+                    margin-left:40px;
+                    vertical-align: top;
+
+                    .nav-container{
+                        .nav-list {
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 0;
+                            .nav-list-item {
+                                display: inline-block;
+                                .nav-link {
+                                    padding: 0 10px;
+                                    display: inline-block;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                    color:white;
+
+                                    &.selected, &:hover {
+                                        background-color:#ED003B;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-wrapper {
+            margin-top: @header-height;
+            .main-container {
+                margin: 0 auto 0;
+                max-width: 600px;
+            }
+        }
+    }
+}
