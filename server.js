@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static('build'));
 
 app.get('*', function(request, response) {
-    var indexPath = path.resolve(__dirname, '../', 'build', 'index.html')
+    var indexPath = path.resolve(__dirname, 'build', 'index.html')
     console.log("Request Received, sending back " + indexPath);
     response.sendFile(indexPath);
 })

@@ -15,7 +15,7 @@ var paths = {
     base: './',
     src: './src/',
     build: './build/',
-    server: './server/'
+    server: './'
 };
 
 /// The Service Worker Gulp Task - Uses swPrecache

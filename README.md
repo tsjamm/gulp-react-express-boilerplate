@@ -12,7 +12,7 @@ to install all the dependencies from package.json
 
 Run
 ```
-npm install -global gulp
+npm install -g gulp
 ```
 to install Gulp globally. You may need Root permissions to install.
 
